@@ -1,7 +1,5 @@
 # Varsha-Portfolio
 
-# Varsha S Portfolio
-
 Welcome to my portfolio! This repository contains my personal portfolio website showcasing my skills, projects, and experiences in the field of Computer Science, with a specialization in Artificial Intelligence (AI) and Machine Learning (ML).
 
 ## Overview
