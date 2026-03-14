@@ -1,33 +1,30 @@
-# Varsha-Portfolio
+# Varsha Sherla — Portfolio Website
 
-Welcome to my portfolio! This repository contains my personal portfolio website showcasing my skills, projects, and experiences in the field of Computer Science, with a specialization in Artificial Intelligence (AI) and Machine Learning (ML).
+🌐 **Live site:** [varsha-sherla.github.io/Varsha-Portfolio](https://varsha-sherla.github.io/Varsha-Portfolio/)
 
-## Overview
+Personal portfolio website for Varsha Sherla — AI/ML Engineer and M.Sc. Artificial Intelligence student at BTU Cottbus-Senftenberg, Germany.
 
-The portfolio consists of two main files:
+---
 
-- `vrshidx.html`: This file contains the HTML structure of the portfolio.
-- `vrshstyles.css`: This file contains the CSS styles that make the portfolio visually appealing and responsive.
+### Built with
 
-## Features
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-- **About Me**: A brief introduction to who I am and my interests in AI & ML.
-- **Skills**: A display of my technical skills and proficiencies.
-- **Projects**: Details of notable projects I've worked on, including a License Plate Detection System and a Lyrics Generator Model.
-- **Experience & Certifications**: Information about my internships and certifications.
-- **Contact Me**: Details on how to reach out for collaborations or inquiries.
+---
 
-## Technologies Used
+### What's inside
 
-- HTML5
-- CSS3
-- JavaScript (for future enhancements)
+- **Hero** — intro, stats, and featured project cards
+- **Experience** — Tech Mahindra, Swecha Telangana, IBM SkillsBuild
+- **Projects** — 6 end-to-end ML projects with tech stacks
+- **Skills** — full tech stack and language proficiency
+- **Certifications** — IIT Ropar, IBM, Columbia+, IIIT Hyderabad
+- **Contact** — email, LinkedIn, GitHub
 
-## How to View
+---
 
-To view my portfolio:
+### Contact
 
-1. Clone this repository to your local machine using:
-   ```bash
-   git clone https://github.com/varsha-sherla/your-repo-name.git
-
+📧 varshasherla06@gmail.com · [LinkedIn](https://www.linkedin.com/in/varsha-s-47103a250) · [GitHub](https://github.com/varsha-sherla)
