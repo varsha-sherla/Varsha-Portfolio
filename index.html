@@ -76,11 +76,13 @@
   /* HERO */
   .hero {
     min-height: 100vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding: 8rem 4rem 4rem;
     position: relative;
     overflow: hidden;
+    gap: 4rem;
   }
   .hero-bg {
     position: absolute;
@@ -91,7 +93,45 @@
       radial-gradient(ellipse 40% 30% at 80% 80%, rgba(109,250,204,0.06) 0%, transparent 60%);
     pointer-events: none;
   }
-  .hero-content { position: relative; max-width: 700px; }
+  .hero-content { position: relative; }
+  .hero-visual {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-card-stack {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+  }
+  .floating-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: float 4s ease-in-out infinite;
+  }
+  .floating-card:nth-child(2) { animation-delay: -1.5s; margin-top: 1rem; border-color: rgba(124,109,250,0.25); }
+  .floating-card:nth-child(3) { animation-delay: -3s; margin-top: 1rem; border-color: rgba(250,109,154,0.2); }
+  .floating-card:nth-child(4) { animation-delay: -2s; margin-top: 1rem; border-color: rgba(109,250,204,0.2); }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+  .fc-icon {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .fc-icon.purple { background: rgba(124,109,250,0.15); }
+  .fc-icon.pink { background: rgba(250,109,154,0.15); }
+  .fc-icon.teal { background: rgba(109,250,204,0.15); }
+  .fc-icon.amber { background: rgba(250,180,109,0.15); }
+  .fc-title { font-weight: 500; font-size: 0.875rem; color: var(--text); }
+  .fc-sub { font-size: 0.75rem; color: var(--muted); margin-top: 0.15rem; }
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -437,6 +477,8 @@
     nav { padding: 1rem 1.5rem; }
     nav ul { display: none; }
     section, .hero { padding: 4rem 1.5rem; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
     .hero-stats { gap: 2rem; flex-wrap: wrap; }
     .projects-grid { grid-template-columns: 1fr; }
     .divider { margin: 0 1.5rem; }
@@ -471,7 +513,7 @@
       Specialising in <strong>Computer Vision</strong>, <strong>NLP</strong>, and <strong>Generative AI</strong>.
     </p>
     <div class="hero-links">
-      <a href="mailto:varshasherla06@gmail.com" class="btn btn-primary">✉ Get in touch</a>
+      <a href="/cdn-cgi/l/email-protection#6e180f1c1d060f1d060b1c020f5e582e09030f0702400d0103" class="btn btn-primary">✉ Get in touch</a>
       <a href="https://github.com/varsha-sherla" target="_blank" class="btn btn-ghost">⌥ GitHub</a>
       <a href="https://www.linkedin.com/in/varsha-s-47103a250" target="_blank" class="btn btn-ghost">in LinkedIn</a>
     </div>
@@ -491,6 +533,40 @@
       <div>
         <div class="stat-num">6<span>+</span></div>
         <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="hero-visual">
+    <div class="hero-card-stack">
+      <div class="floating-card">
+        <div class="fc-icon purple">🕵️</div>
+        <div>
+          <div class="fc-title">Deepfake Detection</div>
+          <div class="fc-sub">99.94% confidence · Xception + Grad-CAM</div>
+        </div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-icon teal">🚗</div>
+        <div>
+          <div class="fc-title">Vehicle Plate Detection</div>
+          <div class="fc-sub">Real-time · YOLOv8 + EasyOCR + SORT</div>
+        </div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-icon pink">🚨</div>
+        <div>
+          <div class="fc-title">AI Fraud Detection</div>
+          <div class="fc-sub">Tech Mahindra · XGBoost + SHAP</div>
+        </div>
+      </div>
+      <div class="floating-card">
+        <div class="fc-icon amber">🤖</div>
+        <div>
+          <div class="fc-title">SPALC · Smart India Hackathon</div>
+          <div class="fc-sub">Autonomous lake cleaner · YOLOv8</div>
+        </div>
       </div>
     </div>
   </div>
@@ -711,15 +787,6 @@
   <h2>Open to <em>opportunities</em></h2>
   <p class="contact-sub">Looking for internships and full-time roles in ML Engineering, Data Science, and AI. Based in Cottbus, Germany — open to remote and relocation.</p>
   <div class="contact-links">
-    <a href="mailto:varshasherla06@gmail.com" class="btn btn-primary">✉ varshasherla06@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#d9afb8abaab1b8aab1bcabb5b8e9ef99beb4b8b0b5f7bab6b4" class="btn btn-primary">✉ <span class="__cf_email__" data-cfemail="780e190a0b10190b101d0a1419484e381f15191114561b1715">[email&#160;protected]</span></a>
     <a href="https://www.linkedin.com/in/varsha-s-47103a250" target="_blank" class="btn btn-ghost">LinkedIn</a>
-    <a href="https://github.com/varsha-sherla" target="_blank" class="btn btn-ghost">GitHub</a>
-  </div>
-</section>
-
-<footer>
-  <p>Designed & built by Varsha Sherla · Cottbus, Germany · 2025</p>
-</footer>
-
-</body>
-</html>
+    <a href="https://github.com/
